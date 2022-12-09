@@ -23,6 +23,7 @@
 		8E9537FB2943AD1200DF1E15 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 8E9537F42943AD1200DF1E15 /* icons.riv */; };
 		8E9537FE2943AE2800DF1E15 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9537FD2943AE2800DF1E15 /* RiveRuntime */; };
 		8E9538002943AE4B00DF1E15 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */; };
+		8E9538022943DC7A00DF1E15 /* franky.riv in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538012943DC7A00DF1E15 /* franky.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8E9537F32943AD1200DF1E15 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		8E9537F42943AD1200DF1E15 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8E9538012943DC7A00DF1E15 /* franky.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = franky.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				8E9537F02943AD1200DF1E15 /* check.riv */,
 				8E9537F12943AD1200DF1E15 /* menu_button.riv */,
 				8E9537F22943AD1200DF1E15 /* shapes.riv */,
+				8E9538012943DC7A00DF1E15 /* franky.riv */,
 				8E9537F32943AD1200DF1E15 /* button.riv */,
 				8E9537F42943AD1200DF1E15 /* icons.riv */,
 			);
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9538022943DC7A00DF1E15 /* franky.riv in Resources */,
 				8E9537F92943AD1200DF1E15 /* shapes.riv in Resources */,
 				8E9537F72943AD1200DF1E15 /* check.riv in Resources */,
 				8E9537CB2943AC7C00DF1E15 /* Preview Assets.xcassets in Resources */,

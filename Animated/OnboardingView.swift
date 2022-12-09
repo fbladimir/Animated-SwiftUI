@@ -10,7 +10,7 @@ import RiveRuntime
 
 struct OnboardingView: View {
     var body: some View {
-        RiveViewModel(fileName: "shapes").view()
+        RiveViewModel(fileName: "franky").view()
             .ignoresSafeArea()
             .blur(radius: 30)
             .background(
