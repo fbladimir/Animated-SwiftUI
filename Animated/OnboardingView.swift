@@ -11,6 +11,8 @@ import RiveRuntime
 struct OnboardingView: View {
     var body: some View {
         RiveViewModel(fileName: "shapes").view()
+        
+        
     }
 }
 
