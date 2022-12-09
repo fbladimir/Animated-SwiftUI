@@ -24,6 +24,11 @@
 		8E9537FE2943AE2800DF1E15 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9537FD2943AE2800DF1E15 /* RiveRuntime */; };
 		8E9538002943AE4B00DF1E15 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */; };
 		8E9538022943DC7A00DF1E15 /* franky.riv in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538012943DC7A00DF1E15 /* franky.riv */; };
+		8E9538042943F2F700DF1E15 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9538032943F2F700DF1E15 /* SignInView.swift */; };
+		8E9538092943F59F00DF1E15 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538062943F59F00DF1E15 /* Inter-Regular.ttf */; };
+		8E95380A2943F59F00DF1E15 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538072943F59F00DF1E15 /* Poppins-Bold.ttf */; };
+		8E95380B2943F59F00DF1E15 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538082943F59F00DF1E15 /* Inter-SemiBold.ttf */; };
+		8E95380E2943F7E500DF1E15 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95380D2943F7E500DF1E15 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,12 @@
 		8E9537F42943AD1200DF1E15 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8E9538012943DC7A00DF1E15 /* franky.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = franky.riv; sourceTree = "<group>"; };
+		8E9538032943F2F700DF1E15 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8E9538062943F59F00DF1E15 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		8E9538072943F59F00DF1E15 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8E9538082943F59F00DF1E15 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		8E95380C2943F5D400DF1E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E95380D2943F7E500DF1E15 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +125,14 @@
 		8E9537C22943AC7C00DF1E15 /* Animated */ = {
 			isa = PBXGroup;
 			children = (
+				8E95380C2943F5D400DF1E15 /* Info.plist */,
 				8E9537C32943AC7C00DF1E15 /* AnimatedApp.swift */,
 				8E9537C52943AC7C00DF1E15 /* ContentView.swift */,
 				8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */,
+				8E95380D2943F7E500DF1E15 /* CustomFont.swift */,
+				8E9538032943F2F700DF1E15 /* SignInView.swift */,
 				8E9537C72943AC7C00DF1E15 /* Assets.xcassets */,
+				8E9538052943F59F00DF1E15 /* Fonts */,
 				8E9537ED2943AD1200DF1E15 /* RiveAssets */,
 				8E9537C92943AC7C00DF1E15 /* Preview Content */,
 			);
@@ -162,6 +177,16 @@
 				8E9537F42943AD1200DF1E15 /* icons.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		8E9538052943F59F00DF1E15 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E9538062943F59F00DF1E15 /* Inter-Regular.ttf */,
+				8E9538072943F59F00DF1E15 /* Poppins-Bold.ttf */,
+				8E9538082943F59F00DF1E15 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +303,13 @@
 				8E9537F92943AD1200DF1E15 /* shapes.riv in Resources */,
 				8E9537F72943AD1200DF1E15 /* check.riv in Resources */,
 				8E9537CB2943AC7C00DF1E15 /* Preview Assets.xcassets in Resources */,
+				8E95380B2943F59F00DF1E15 /* Inter-SemiBold.ttf in Resources */,
 				8E9537F82943AD1200DF1E15 /* menu_button.riv in Resources */,
 				8E9537F52943AD1200DF1E15 /* house.riv in Resources */,
 				8E9537FA2943AD1200DF1E15 /* button.riv in Resources */,
+				8E95380A2943F59F00DF1E15 /* Poppins-Bold.ttf in Resources */,
 				8E9537C82943AC7C00DF1E15 /* Assets.xcassets in Resources */,
+				8E9538092943F59F00DF1E15 /* Inter-Regular.ttf in Resources */,
 				8E9537F62943AD1200DF1E15 /* confetti.riv in Resources */,
 				8E9537FB2943AD1200DF1E15 /* icons.riv in Resources */,
 			);
@@ -308,8 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E95380E2943F7E500DF1E15 /* CustomFont.swift in Sources */,
 				8E9538002943AE4B00DF1E15 /* OnboardingView.swift in Sources */,
 				8E9537C62943AC7C00DF1E15 /* ContentView.swift in Sources */,
+				8E9538042943F2F700DF1E15 /* SignInView.swift in Sources */,
 				8E9537C42943AC7C00DF1E15 /* AnimatedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +502,7 @@
 				DEVELOPMENT_TEAM = B4X88B8AV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,6 +532,7 @@
 				DEVELOPMENT_TEAM = B4X88B8AV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
