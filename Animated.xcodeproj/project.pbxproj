@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E9537C02943AC7C00DF1E15 /* Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animated.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9537C02943AC7C00DF1E15 /* Frankys App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frankys App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9537C32943AC7C00DF1E15 /* AnimatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedApp.swift; sourceTree = "<group>"; };
 		8E9537C52943AC7C00DF1E15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E9537C72943AC7C00DF1E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		8E9537C12943AC7C00DF1E15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E9537C02943AC7C00DF1E15 /* Animated.app */,
+				8E9537C02943AC7C00DF1E15 /* Frankys App.app */,
 				8E9537D02943AC7C00DF1E15 /* AnimatedTests.xctest */,
 				8E9537DA2943AC7C00DF1E15 /* AnimatedUITests.xctest */,
 			);
@@ -215,7 +215,7 @@
 				8E9537FD2943AE2800DF1E15 /* RiveRuntime */,
 			);
 			productName = Animated;
-			productReference = 8E9537C02943AC7C00DF1E15 /* Animated.app */;
+			productReference = 8E9537C02943AC7C00DF1E15 /* Frankys App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8E9537CF2943AC7C00DF1E15 /* AnimatedTests */ = {
@@ -522,7 +522,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fbladimir.Animated;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Frankys App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +552,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fbladimir.Animated;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Frankys App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -64,11 +64,11 @@ struct OnboardingView: View {
     var content: some View {
         VStack(alignment: .leading, spacing: 16) {
             
-            Text("Learn Dream & Create")
-                .font(.custom("Poppins Bold", size: 50, relativeTo: .largeTitle))
+            Text("Learn With Franklin")
+                .font(.custom("Poppins Bold", size: 47, relativeTo: .largeTitle))
                 .frame(width:260, alignment: .leading)
             
-            Text("An Application Created By Franklin Bladimir Cano. There are many things you can learn. Find your path here to learn how to design applications.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
+            Text("An Application Created By Franklin Bladimir Cano. Learning how to program is hard, I understand. Learn with me today and start building applications.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
                 .opacity(0.7)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -80,7 +80,7 @@ struct OnboardingView: View {
                 .frame(width:236, height: 64)
                 .overlay{
                     //using an SF symbol to use arrow inside the button
-                    Label("Start Learning Today", systemImage: "arrow.forward")
+                    Label("Start Learning Today", systemImage: "arrowshape.turn.up.right.circle.fill")
                         .offset(x: 4, y:4)
                         .customFont(.body)
                     
