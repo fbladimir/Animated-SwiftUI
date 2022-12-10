@@ -27,11 +27,11 @@ struct OnboardingView: View {
             
             VStack(alignment: .leading, spacing: 16) {
                 
-                Text("Learn Design & Code")
-                    .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
+                Text("Learn Dream & Create")
+                    .font(.custom("Poppins Bold", size: 50, relativeTo: .largeTitle))
                     .frame(width:260, alignment: .leading)
                 
-                Text("Don’t skip design. Learn design and code, by building real apps with React and Swift. Complete courses about the best tools.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
+                Text("An Application Created By Franklin Bladimir Cano. There are many things you can learn. Find your path here to learn how to design applications.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
                     .opacity(0.7)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
@@ -43,9 +43,9 @@ struct OnboardingView: View {
                     .frame(width:236, height: 64)
                     .overlay{
                         //using an SF symbol to use arrow inside the button
-                        Label("Start the course", systemImage: "arrow.forward")
+                        Label("Start Learning Today", systemImage: "arrow.forward")
                             .offset(x: 4, y:4)
-                            .font(.headline)
+                            .customFont(.body)
                         
                     }
                 
@@ -65,7 +65,7 @@ struct OnboardingView: View {
                         button.play(animationName: "active")
                 }
                 
-                Text("Purchase includes access to 30+ courses, 240+ premium tutorials, 120+ hours of videos, source files and certificates.").customFont(.footnote)
+                Text("Completely Free. Includes access to 30+ courses, 240+ premium tutorials, source files and certificates. Start your journey today!").customFont(.footnote)
                     .opacity(0.7)
                 
                 
