@@ -13,6 +13,9 @@ struct OnboardingView: View {
     //declare the riveasset in the beginning
     let button = RiveViewModel(fileName: "button")
     
+    //set a state
+    @State var showModel = false
+    
     var body: some View {
         ZStack {
             //adding background view
@@ -23,62 +26,100 @@ struct OnboardingView: View {
                     Image("Spline")
                         .blur(radius: 50)
                         .offset(x:200, y:100)
-            )
+                )
             
-            VStack(alignment: .leading, spacing: 16) {
-                
-                Text("Learn Dream & Create")
-                    .font(.custom("Poppins Bold", size: 50, relativeTo: .largeTitle))
-                    .frame(width:260, alignment: .leading)
-                
-                Text("An Application Created By Franklin Bladimir Cano. There are many things you can learn. Find your path here to learn how to design applications.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
-                    .opacity(0.7)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                Spacer()
-                
-                
-                //Adding the declared button to view it
-                button.view()
-                    .frame(width:236, height: 64)
-                    .overlay{
-                        //using an SF symbol to use arrow inside the button
-                        Label("Start Learning Today", systemImage: "arrow.forward")
-                            .offset(x: 4, y:4)
-                            .customFont(.body)
+            content
+                .offset(y: showModel ? -50 : 0)
+            
+            Color("Shadow")
+                .opacity(showModel ? 0.4 : 0)
+                .ignoresSafeArea()
+            
+            
+            if showModel {
+                SignInView()
+                    .transition(.move(edge: .top).combined(with: .opacity))
+                    .overlay(
+                        Button {
+                            withAnimation(.spring()) {
+                                showModel = false
+                            }
                         
-                    }
+                        } label:  {
+                            Image(systemName: "xmark")
+                                .frame(width: 36, height: 36)
+                                .background(.white)
+                                .mask(Circle())
+                                .shadow(color: Color("Shadow")
+                                .opacity(0.3), radius: 5, x: 0, y: 3)
+                        }
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                    )
+                    .zIndex(1)
                 
-                
-                //adding a drop shadow to the button
-                    .background {
-                        Color.black
-                            .cornerRadius(30)
-                            .blur(radius: 10)
-                            .opacity(0.3)
-                            .offset(y:10)
-                        
-                    }
-                
-                    //adding the animation to the button
-                    .onTapGesture {
-                        button.play(animationName: "active")
-                }
-                
-                Text("Completely Free. Includes access to 30+ courses, 240+ premium tutorials, source files and certificates. Start your journey today!").customFont(.footnote)
-                    .opacity(0.7)
-                
-                
-
             }
+        }
+    }
+    
+    var content: some View {
+        VStack(alignment: .leading, spacing: 16) {
             
-            .padding(40)
-            .padding(.top, 40)
+            Text("Learn Dream & Create")
+                .font(.custom("Poppins Bold", size: 50, relativeTo: .largeTitle))
+                .frame(width:260, alignment: .leading)
+            
+            Text("An Application Created By Franklin Bladimir Cano. There are many things you can learn. Find your path here to learn how to design applications.").customFont(.body)  //Custom font is used from custom font modifier made in customfont file
+                .opacity(0.7)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Spacer()
+            
+            
+            //Adding the declared button to view it
+            button.view()
+                .frame(width:236, height: 64)
+                .overlay{
+                    //using an SF symbol to use arrow inside the button
+                    Label("Start Learning Today", systemImage: "arrow.forward")
+                        .offset(x: 4, y:4)
+                        .customFont(.body)
+                    
+                }
+            
+            
+            //adding a drop shadow to the button
+                .background {
+                    Color.black
+                        .cornerRadius(30)
+                        .blur(radius: 10)
+                        .opacity(0.3)
+                        .offset(y:10)
+                    
+                }
+            
+            //adding the animation to the button
+                .onTapGesture {
+                    button.play(animationName: "active")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                        withAnimation(.spring()) {
+                            showModel = true
+                        }
+                    }
+                }
+            
+            Text("Completely Free. Includes access to 30+ courses, 240+ premium tutorials, source files and certificates. Start your journey today!").customFont(.footnote)
+                .opacity(0.7)
+            
             
             
         }
         
+        .padding(40)
+        .padding(.top, 40)
+        
+        
     }
+    
 }
 
 struct OnboardingView_Previews: PreviewProvider {

@@ -30,6 +30,7 @@
 		8E95380B2943F59F00DF1E15 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9538082943F59F00DF1E15 /* Inter-SemiBold.ttf */; };
 		8E95380E2943F7E500DF1E15 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95380D2943F7E500DF1E15 /* CustomFont.swift */; };
 		8E953810294464F800DF1E15 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95380F294464F800DF1E15 /* CustomTextField.swift */; };
+		8E953812294468C000DF1E15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E953811294468C000DF1E15 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		8E95380C2943F5D400DF1E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8E95380D2943F7E500DF1E15 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		8E95380F294464F800DF1E15 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8E953811294468C000DF1E15 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */,
 				8E95380D2943F7E500DF1E15 /* CustomFont.swift */,
 				8E9538032943F2F700DF1E15 /* SignInView.swift */,
+				8E953811294468C000DF1E15 /* Extensions.swift */,
 				8E95380F294464F800DF1E15 /* CustomTextField.swift */,
 				8E9537C72943AC7C00DF1E15 /* Assets.xcassets */,
 				8E9538052943F59F00DF1E15 /* Fonts */,
@@ -345,6 +348,7 @@
 				8E9537C62943AC7C00DF1E15 /* ContentView.swift in Sources */,
 				8E9538042943F2F700DF1E15 /* SignInView.swift in Sources */,
 				8E9537C42943AC7C00DF1E15 /* AnimatedApp.swift in Sources */,
+				8E953812294468C000DF1E15 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
