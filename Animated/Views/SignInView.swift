@@ -34,6 +34,12 @@ struct SignInView: View {
                 isLoading = false
                 try? confetti.triggerInput("Trigger explosion")
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation {
+                    showModel = false
+                }
+            
+            }
         } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 try? check.triggerInput("Error")

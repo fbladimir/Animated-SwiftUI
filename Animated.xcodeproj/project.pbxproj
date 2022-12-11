@@ -106,6 +106,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E46C4C32945A9D1006B72A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */,
+				8E9538032943F2F700DF1E15 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E46C4C42945AA6A006B72A1 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				8E95380D2943F7E500DF1E15 /* CustomFont.swift */,
+				8E953811294468C000DF1E15 /* Extensions.swift */,
+				8E95380F294464F800DF1E15 /* CustomTextField.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		8E9537B72943AC7B00DF1E15 = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +151,8 @@
 				8E95380C2943F5D400DF1E15 /* Info.plist */,
 				8E9537C32943AC7C00DF1E15 /* AnimatedApp.swift */,
 				8E9537C52943AC7C00DF1E15 /* ContentView.swift */,
-				8E9537FF2943AE4B00DF1E15 /* OnboardingView.swift */,
-				8E95380D2943F7E500DF1E15 /* CustomFont.swift */,
-				8E9538032943F2F700DF1E15 /* SignInView.swift */,
-				8E953811294468C000DF1E15 /* Extensions.swift */,
-				8E95380F294464F800DF1E15 /* CustomTextField.swift */,
+				8E46C4C32945A9D1006B72A1 /* Views */,
+				8E46C4C42945AA6A006B72A1 /* Styles */,
 				8E9537C72943AC7C00DF1E15 /* Assets.xcassets */,
 				8E9538052943F59F00DF1E15 /* Fonts */,
 				8E9537ED2943AD1200DF1E15 /* RiveAssets */,
