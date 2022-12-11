@@ -37,7 +37,7 @@ struct OnboardingView: View {
             
             
             if showModel {
-                SignInView()
+                SignInView(showModel: $showModel)
                     .transition(.move(edge: .top).combined(with: .opacity))
                     .overlay(
                         Button {
