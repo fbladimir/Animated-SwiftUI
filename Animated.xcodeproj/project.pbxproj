@@ -36,6 +36,8 @@
 		8EEFB62D2946E040000BEBC3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFB62B2946E040000BEBC3 /* Course.swift */; };
 		8EEFB62F2946E103000BEBC3 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFB62E2946E103000BEBC3 /* VCard.swift */; };
 		8EEFB6312946E5D7000BEBC3 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFB6302946E5D7000BEBC3 /* HCard.swift */; };
+		8EEFB6332946E7A5000BEBC3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFB6322946E7A5000BEBC3 /* HomeView.swift */; };
+		8EEFB6352946EB55000BEBC3 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFB6342946EB55000BEBC3 /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		8EEFB62B2946E040000BEBC3 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		8EEFB62E2946E103000BEBC3 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		8EEFB6302946E5D7000BEBC3 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
+		8EEFB6322946E7A5000BEBC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8EEFB6342946EB55000BEBC3 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +165,9 @@
 				8E95380C2943F5D400DF1E15 /* Info.plist */,
 				8E9537C32943AC7C00DF1E15 /* AnimatedApp.swift */,
 				8E9537C52943AC7C00DF1E15 /* ContentView.swift */,
+				8EEFB6342946EB55000BEBC3 /* SideMenu.swift */,
 				8EEFB6272946CD19000BEBC3 /* TabBar.swift */,
+				8EEFB6322946E7A5000BEBC3 /* HomeView.swift */,
 				8EEFB62E2946E103000BEBC3 /* VCard.swift */,
 				8EEFB6302946E5D7000BEBC3 /* HCard.swift */,
 				8E46C4C32945A9D1006B72A1 /* Views */,
@@ -383,6 +389,8 @@
 			files = (
 				8EEFB6312946E5D7000BEBC3 /* HCard.swift in Sources */,
 				8E95380E2943F7E500DF1E15 /* CustomFont.swift in Sources */,
+				8EEFB6332946E7A5000BEBC3 /* HomeView.swift in Sources */,
+				8EEFB6352946EB55000BEBC3 /* SideMenu.swift in Sources */,
 				8E9538002943AE4B00DF1E15 /* OnboardingView.swift in Sources */,
 				8EEFB62D2946E040000BEBC3 /* Course.swift in Sources */,
 				8E953810294464F800DF1E15 /* CustomTextField.swift in Sources */,
